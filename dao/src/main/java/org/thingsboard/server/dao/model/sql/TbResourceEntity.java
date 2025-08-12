@@ -75,7 +75,7 @@ public class TbResourceEntity extends BaseSqlEntity<TbResource> {
     @Column(name = RESOURCE_FILE_NAME_COLUMN)
     private String fileName;
 
-    @Column(name = RESOURCE_DATA_COLUMN)
+    @Column(name = RESOURCE_DATA_COLUMN, columnDefinition = "VARCHAR")
     private byte[] data;
 
     @Column(name = RESOURCE_ETAG_COLUMN)

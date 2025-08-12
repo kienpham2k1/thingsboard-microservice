@@ -58,7 +58,7 @@ public class ComponentDescriptorEntity extends BaseSqlEntity<ComponentDescriptor
     private String clazz;
 
     @Convert(converter = JsonConverter.class)
-    @Column(name = ModelConstants.COMPONENT_DESCRIPTOR_CONFIGURATION_DESCRIPTOR_PROPERTY)
+    @Column(name = ModelConstants.COMPONENT_DESCRIPTOR_CONFIGURATION_DESCRIPTOR_PROPERTY, columnDefinition = "VARCHAR")
     private JsonNode configurationDescriptor;
 
     @Column(name = ModelConstants.COMPONENT_DESCRIPTOR_CONFIGURATION_VERSION_PROPERTY)
